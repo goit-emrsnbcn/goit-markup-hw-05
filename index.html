@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Homework 4</title>
+        <title>Homework 5</title>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap" />
         <link rel="stylesheet" href="css/styles.css" />
     </head>
@@ -14,10 +14,10 @@
                 <nav>
                     <ul class="list">
                         <li>
-                            <a href="" class="link nav-link active">Studio</a>
+                            <a href="index.html" class="link nav-link active">Studio</a>
                         </li>
                         <li>
-                            <a href="" class="link nav-link">Portfolio</a>
+                            <a href="portfolio.html" class="link nav-link">Portfolio</a>
                         </li>
                         <li>
                             <a href="" class="link nav-link">Contact</a>
@@ -41,7 +41,16 @@
                     Effective Solution<br />
                     for Your Business
                 </h1>
-                <button type="button" class="hero-btn">Order Service</button>
+                <button type="button" class="hero-btn" data-modal-open>Order Service</button>
+                <div class="backdrop is-hidden" data-modal>
+                    <div class="modal">
+                        <button type="button" class="modal-close-btn" data-modal-close>
+                            <svg width="18" height="18">
+                                <use href="./images/icons.svg#close"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
             </section>
 
             <section class="about section">
@@ -177,7 +186,7 @@
             </section>
         </main>
 
-        <footer class="bg-dark">
+        <footer class="bg-dark footer">
             <a href="#" class="logo link"> <span class="logo-web">Web</span><span class="logo-studio-footer">studio</span> </a>
             <p class="footer-text">
                 Increase the flow of customers and <br />
@@ -185,5 +194,6 @@
                 marketing & growth solutions.
             </p>
         </footer>
+        <script type="text/javascript" src="./js/modal.js"></script>
     </body>
 </html>
